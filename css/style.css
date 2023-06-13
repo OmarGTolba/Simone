@@ -1,0 +1,1243 @@
+*{
+    margin: 0;
+padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+
+
+.title{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5rem 0;
+}
+.title p{
+    text-align: center;
+    border-bottom: 3px solid #20c997;
+    font-weight: 600;
+    font-size: 36px;
+    position: absolute;
+}
+.title h2{
+color: #dee3e4 ;
+letter-spacing: 8px;
+font-weight: 600;
+font-size: 8.25rem ;
+position: relative;
+opacity: 0.4;
+}   
+
+
+@media screen and (max-width:962px){
+
+    .title{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4.5rem 0;
+    }
+    .title p{
+        text-align: center;
+        border-bottom: 3px solid #20c997;
+        font-weight: 600;
+        font-size: 36px;
+        position: absolute;
+    }
+    
+    .title h2{
+    color: #dee3e4 ;
+        font-weight: 600;
+    font-size: 72px ;
+    position: relative;
+    opacity: 0.4;
+    }
+    
+       }
+     
+
+
+/*........................................START NAVIGATION...................................... */
+/* ............................................................................................. */
+.navigation{
+    position: fixed;
+width: 100%;
+z-index: 99;
+background-color: #212529;
+}
+.navigationchild{     
+align-items: center;
+height: 70px;
+    width: 98%;
+    margin: auto; 
+     display: flex;
+}
+.navlogo{
+    width: 15%;
+    display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.navlogo img{   
+margin: 0 0.85em;
+    width: 114;
+    height: 27;
+}
+.navitems {     
+    color: white;
+    width: 70%;
+    transition: 1s;
+    align-items: center;
+}
+.navitems ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navitems li{
+margin: 0 0.85em;    
+    list-style: none;
+    }
+
+    .navitems i{
+    width: 100%;
+        margin-top: 50px;
+        padding-top: 100px;
+        display: none;
+    }
+.navitems li:hover {
+            color: rgb(32, 201, 151);;   
+            cursor: pointer;
+        }
+    @media screen and (max-width:992px){
+        .navitems{
+        position: relative;
+height: 100%;
+justify-content: center;
+        width: 25%;
+        flex-wrap: wrap;
+            flex-direction: column;
+
+            top: -240%;
+        }
+        .navigationchild{
+            flex-wrap: wrap;
+        }
+        .navitems i {
+            display: flex;
+            text-align: center;
+            font-size: 32px;
+            width: 50%;
+            margin: auto;
+            padding: 60px 0px 0 20px;
+            text-align: right;
+        }
+        .navitems ul{
+            
+            background-color: #212529;
+            flex-direction: column;
+
+            justify-content: center;
+        }
+        .navlogo{
+            width: 75%;
+        }
+        .navitems:hover {
+            top: 0;
+        }
+        .navitems:hover i{
+            opacity: 0;
+        }
+    }
+/* ............................................................................................. */
+/*........................................END NAVIGATION........................................ */
+
+
+
+/*..........................................START HOME.......................................... */
+/* ............................................................................................. */
+    .home{
+        height: 100vh;
+        background-image: url(img/intro-bg.jpg);
+        background-size:cover ;
+        background-position: top;    
+        background-attachment: fixed;
+    }
+    .homechild{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .hometext{
+        text-align: center;   
+        color: aliceblue;
+    }
+     .hometext span{
+        font-size: 28px;
+        font-weight: 500;    
+        line-height: 50.4px;    
+    }
+     .hometext p{   
+        margin-bottom: 20px;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 37.8px; 
+        margin-bottom: 10px 0;    
+    }
+     .hometext h2{
+        margin: 10px 0;
+        line-height: 83.5px; 
+        font-size: 64px;
+        font-weight: 600;
+     }
+     .hometext button{
+        border-radius: 20px;
+        color: #20c997;
+        padding: 0.8rem 2.6rem; 
+        box-sizing: border-box;
+        border: 2px solid #20c997;
+        background-color: transparent;
+    }
+    .hometext button:hover {
+        cursor: pointer;
+        background-color: #20c997;
+        color: white;    
+    }
+    .hometext   h2::after{
+        content: "";
+        animation-name: slider;
+        animation-duration: 18s;
+        animation-iteration-count: infinite;
+        }
+    .arrow ion-icon{
+        color: #fff;
+    }
+    .arrow{
+        position: absolute;
+        top: 95%;
+        animation-name: arrow;
+        animation-duration: 1.5s;
+        animation-delay: 3s;
+        animation-iteration-count: infinite;
+    }
+ @media screen and (max-width:992px){
+.hometext h2{
+    font-size: 45px;
+}
+} 
+ @keyframes arrow{
+        
+    0% {top: 90.5%;}
+    80% {top: 95%;}
+    
+ }
+ 
+        @keyframes slider{
+    
+        
+    0% {content: "I";}
+
+    1% {content: "I";}
+    2% {content: "I'";}
+    3% {content: "I'm";}
+    4% {content: "I'm S";}
+    5% {content: "I'm Si";}
+    6% {content: "I'm Sim";}
+    7% {content: "I'm Simo";}
+    8% {content: "I'm Simon";}
+    9% {content: "I'm Simone";}
+    10% {content: "I'm Simone O";}
+    11% {content: "I'm Simone Ol";}
+    12% {content: "I'm Simone Oli";}
+    13% {content: "I'm Simone Oliv";}
+    14% {content: "I'm Simone Olivi";}
+    15% {content: "I'm Simone Olivia";}
+    20% {content: "I'm Simone Olivia";}
+    20.5% {content: "I'm Simone Olivi";}
+    21% {content: "I'm Simone Oliv";}
+    21.5% {content: "I'm Simone Oli";}
+    22% {content: "I'm Simone Ol";}
+    22.5% {content: "I'm Simone O";}
+    23% {content: "I'm Simone ";}
+    23.5% {content: "I'm Simone";}
+    24% {content: "I'm Simon";}
+    24.5% {content: "I'm Simo";}
+    25% {content: "I'm Sim";}
+    25.5% {content: "I'm Si";}
+    26% {content: "I'm S";}
+    26.5% {content: "I'm ";}
+    27% {content: "I'm a";}
+    28% {content: "I'm a F";}
+    29% {content: "I'm a Fr";}
+    30% {content: "I'm a Fre";}
+    31% {content: "I'm a Free";}
+    32% {content: "I'm a Freel";}
+    33% {content: "I'm a Freela";}
+    34% {content: "I'm a Freelan";}
+    35% {content: "I'm a Freelanc";}
+    36% {content: "I'm a Freelance";}
+    37% {content: "I'm a Freelancer.";}
+    38% {content: "I'm a Freelancer.";}
+    39% {content: "I'm a Freelancer.";}
+    40% {content: "I'm a Freelancer.";}
+    41% {content: "I'm a Freelancer.";}
+    42% {content: "I'm a Freelancer.";}
+    42.5% {content: "I'm a Freelance";}
+    43% {content: "I'm a Freelanc";}    
+    43.5% {content: "I'm a Freelan";}
+    44% {content: "I'm a Freela";}
+    44.5% {content: "I'm a Freel";}
+    45% {content: "I'm a Free";}
+    45.5% {content: "I'm a Fre";}
+    46% {content: "I'm a Fr";}
+    46.5% {content: "I'm a F";}
+    47% {content: "I'm a";}
+    48% {content: "I'm a P";}
+    49% {content: "I'm a Ph";}
+    50% {content: "I'm a Pho";}
+    51% {content: "I'm a Phot";}
+    52% {content: "I'm a Photo";}
+    53% {content: "I'm a Photog";}
+    54% {content: "I'm a Photogr";}
+    55% {content: "I'm a Photogra";}
+    56% {content: "I'm a Photograp";}
+    57% {content: "I'm a Photograph";}
+    58% {content: "I'm a Photographe";}
+    59% {content: "I'm a Photographer";}
+    60% {content: "I'm a Photographer.";}
+    61% {content: "I'm a Photographer.";}
+    62% {content: "I'm a Photographer.";}
+    63% {content: "I'm a Photographer.";}
+    64% {content: "I'm a Photographer.";}
+    65% {content: "I'm a Photographer.";}
+    65.5% {content: "I'm a Photographer";}
+    66% {content: "I'm a Photographe";}
+    66.5% {content: "I'm a Photograph";}
+    67% {content: "I'm a Photograp";}
+    67.5% {content: "I'm a Photogra";}
+    68% {content: "I'm a Photogr";}
+    68.5% {content: "I'm a Photog";}
+    69% {content: "I'm a Photo";}
+    69.5% {content: "I'm a Phot";}
+    70% {content: "I'm a Pho";}
+    71% {content: "I'm a Ph";}
+    71.5% {content: "I'm a P";}
+    72% {content: "I'm a ";}
+    73% {content: "I'm a D";}
+    74% {content: "I'm a De";}
+    75% {content: "I'm a Des";}
+    76% {content: "I'm a Desi";}
+    77% {content: "I'm a Desig";}
+    78% {content: "I'm a Design";}
+    79% {content: "I'm a Designe";}
+    80% {content: "I'm a Designer.";}
+    81% {content: "I'm a Designer.";}
+    82% {content: "I'm a Designer.";}
+    83% {content: "I'm a Designer.";}
+    84% {content: "I'm a Designer.";}
+    85% {content: "I'm a Designer.";}
+    85.5% {content: "I'm a Designer";}
+    86% {content: "I'm a Designe";}
+    86.5% {content: "I'm a Design";}
+    87% {content: "I'm a Desig";}
+    87.5% {content: "I'm a Desi";}
+    88% {content: "I'm a Des";}
+    88.5% {content: "I'm a De";}
+    89% {content: "I'm a D";}
+    89.5% {content: "I'm a ";}
+    90.5% {content: "I'm a";}
+    91% {content: "I'm ";}
+    91.5% {content: "I'm";}
+    92% {content: "I'";}
+    92.5% {content: "I";}
+    93% {content: "I";}      
+    100% {content: "I";}
+
+}
+
+/* ............................................................................................. */
+/* ...........................................END HOME.......................................... */
+
+
+
+
+/* ........................................START ABOUT.......................................... */
+/* ............................................................................................. */
+.about{
+    
+    margin-top: 3rem;
+}
+
+
+.aboutchild{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.abouttext{
+
+    padding: 20px;
+    width: 70%;
+}
+
+.abouttext span{
+    color: #20c997;
+    font-size: 28px;
+}
+
+.abouttext p{
+ font-size: 16px;
+    line-height: 28.8px;
+    font-weight: 400;
+ }
+.abouttext h2{
+    margin-bottom: 1rem;
+    font-size: 28px;
+    font-weight: 600;
+}
+.aboutcolumn{
+    
+    line-height: 24px;
+    width: 30%;
+    padding: 1.5rem;
+}
+.aboutcolumn ul{
+    margin-bottom: 1rem;
+}
+.aboutcolumn li{
+     border-bottom: 1px solid #eaeaea; 
+     padding-top: 12px; 
+     padding-bottom: 12px;
+    list-style:none;
+    line-height: 24px;
+}
+
+.aboutcolumn span{
+    font-weight: 600;
+}
+
+.aboutcolumn button{
+    padding: 0.8rem 2.6rem; 
+     font-weight: 500; 
+    border: none;
+     border-radius: 50rem;
+     background-color: #20c997;
+    border-color: #20c997;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+}
+
+
+.aboutcolumn button:hover {
+    cursor: pointer;
+    background-color: #1baa80;
+}
+
+.aboutcolumn button a{
+text-decoration: none;
+color: white;
+}
+@media screen and (max-width:992px){
+.aboutcolumn{
+    width: 90%;
+}
+.abouttext{
+    width: 92%;
+    margin: auto;
+    text-align: center;
+}
+
+}
+
+/* ............................................................................................. */
+/* .........................................END ABOUT........................................... */
+
+
+
+
+
+
+/* ........................................START FACTS.......................................... */
+/* ............................................................................................. */
+
+.fact{
+    margin-top: 3rem;
+}
+.factschild{
+    flex-wrap: wrap;
+    width:85% ;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.fact{
+    width: 25%;
+    border-left: 1px solid #eaeaea; 
+    
+    padding: 20px 12px;
+}
+.fact span{
+    font-size: 48px;
+    font-weight: 500;
+    color: rgb(108, 117, 125);
+}
+@media screen and (max-width:768px){
+.fact{
+    width: 100%;
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .fact{
+        width: 50%;
+    }
+    
+    .factschild{
+        width: 100%;
+    }
+}     
+/* ............................................................................................. */
+/* .........................................END FACTS........................................... */
+
+
+
+
+
+/* .......................................START SERVICEES....................................... */
+/* ............................................................................................. */
+.services{
+    margin-top: 3rem;
+    background-color: #f8f9fa;
+}
+.serviceschild{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.service{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+    margin-bottom: 3rem;
+}
+.service .text{
+    padding: 0px 12px;
+}
+.service h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: rgb(37, 43, 51);
+}
+.services ion-icon{
+    color: #20c997;
+    font-size: 32px;
+    padding: 20px;
+}
+.services i{
+    color: #20c997;
+    font-size: 32px;
+    padding: 20px;
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    margin-right: 5px;
+}
+@media screen and (max-width:768px){
+.service{
+    width: 90%;
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .serviceschild{
+        width: 90%;
+    }
+}     
+/* ............................................................................................. */
+/* .........................................END SERVICEES....................................... */
+
+
+
+
+
+
+
+.resume{
+    margin-top: 3rem;
+}
+.resumechild{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.resumeul h2{
+    font-size: 24px;
+font-weight: 600;
+margin-bottom: 1.5rem;
+
+}
+.resumeul{
+    padding: 0 30px;
+    width: 50%;
+}
+.resumeul li{
+    list-style: none;
+    border: 1px solid #dee3e4;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.resumeul h3{
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+.resumeul p{
+    color: #4c4d4d;
+}
+ .date{
+    padding: 0.35em 0.65em;
+    font-size: 14px;
+    text-align: center;
+    width: 103px;
+    height: 35px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #fff !important; 
+    border-radius: 0.25rem;
+    background-color: #20c997;
+ }
+
+ .uni{
+    margin-bottom: 1em;
+    color: #dc3545 !important;
+}
+
+@media screen and (max-width:768px){
+
+.resumeul{
+    width: 100%;
+}
+.resumeul li{
+    padding: 10;
+}
+.resumechild{
+    width: 95% ;
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .resumechild{
+        width: 95% ;
+    }
+}     
+
+.skills{
+    margin-top: 3rem ;
+}
+.skillschild{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.skill{
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 45%;
+    position: relative;
+}
+.skillchild{
+    background-color: #dee3e4;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+}
+.skillschild h2{
+width: 95%;
+margin: auto;
+margin-bottom: 1.5rem;
+font-size: 24px;
+font-weight: 600;
+}
+.skilltext{
+    width: 98%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.skilllvl1{
+width: 65%;
+height: 10px;
+position: absolute;
+background-color: #20c997;
+margin-bottom: 1.5rem;
+}
+.skilllvl2{
+    width: 95%;
+    height: 10px;
+    position: absolute;
+    background-color: #20c997;
+    margin-bottom: 1.5rem;
+    }
+.skilllvl3{
+    width: 80%;
+    height: 10px;
+    position: absolute;
+    background-color: #20c997;
+    margin-bottom: 1.5rem;
+    }
+.skilllvl4{
+    width: 70%;
+    height: 10px;
+    position: absolute;
+    background-color: #20c997;
+    margin-bottom: 1.5rem;
+    }   
+.skilllvl5{
+    width: 60%;
+    height: 10px;
+    position: absolute;
+    background-color: #20c997;
+    margin-bottom: 1.5rem;
+    }
+.skilllvl6{
+    width: 99%;
+    height: 10px;
+    position: absolute;
+    background-color: #20c997;
+    margin-bottom: 1.5rem;
+    }
+.btn{
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.skills button{
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+    color: #6c757d;
+    padding: 0.8rem 2.6rem;
+    border-radius: 50rem;
+    border: 2px solid #6c757d;
+}
+.btn button:hover {
+background-color: #6c757d;
+color: white;
+cursor: pointer;
+}
+/* ........................................................................... */
+@media screen and (max-width:768px){
+
+.skill{
+    width: 90%;
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .skillschild{
+        width: 90%;
+    }
+}     
+/* .....................................START OUR-PORTFOLIO..................................... */
+/* ............................................................................................. */
+.mywork{
+margin-top: 3rem;
+background-color: #f8f9fa;
+padding: 50px 0;
+}
+.worknav{
+    width: 25%;
+margin: auto;
+    }
+.worknav ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.worknav li{
+text-align: center;
+padding-bottom: 5px;
+display: flex;
+list-style: none;
+color: #7b8074;
+border-bottom: 1px solid #1baa80;
+}
+.worknav li:hover{
+color: #20c997;
+cursor: pointer;
+}
+
+.work{
+    display: flex;
+    width: 87%;
+    margin: auto;
+    flex-wrap: wrap;
+    
+}
+.workul{
+    padding:  10px 12px;
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    overflow: hidden;
+    position: relative;
+    list-style: none;
+    margin-bottom: 15px;
+}
+.item img{
+width: 100%;
+text-align: center;
+border-radius: 0.25rem;
+transition: 1s;
+}
+.caption h3{
+    font-size: 18px;
+}
+.caption{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.work .item:hover .caption{
+    cursor: pointer;
+    opacity: 1; 
+    }
+
+    
+ .item:hover img {
+    cursor: pointer;
+    filter: blur(2px);
+    transform: scale(1.1);    
+    }
+
+@media screen and (max-width:600px){
+.workul{
+    width: 90%;
+    margin: auto;
+}
+
+}
+@media screen and (min-width:601px) and (max-width:768px) {
+    .workul{
+        width: 50%;
+        margin: 0;
+    }
+.workul li{
+    position: relative;
+} 
+}     
+@media screen and (min-width:769px) and (max-width:992px) {
+    .work ul{
+        width: 50%;
+    }
+    .work{
+        width: 95%;
+    }
+}     
+/* ............................................................................................. */
+/* .........................................END HELLO........................................... */
+
+
+
+
+
+
+/* .......................................START FEEDBACK........................................ */
+/* ............................................................................................. */
+.clientchild{
+    width: 85%;
+    margin: auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.clients{
+    margin-top: 3rem;
+}
+.client{
+    
+    border-radius: 0.25rem;
+
+    padding: 48px;
+    background-color: #f8f9fa;
+    width: 49%;
+}
+.clientinfo{
+    display: flex;
+margin-bottom: 1.5rem;
+}
+.clientfeedback {
+    position: relative;
+    width: 99%;
+    
+}
+.client img{
+    width: 12%;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.clientfeedback p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+@media screen and (max-width:768px){
+.client{
+    width: 90%;
+    margin: 10px;
+}
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .client{
+        width: 90%;
+    margin: 10PX;
+
+}
+    .clientchild{
+        width:95% ;
+justify-content: center;
+    }
+}     
+/* ............................................................................................. */
+/* ........................................END FEEDBACK......................................... */
+
+
+
+/* ......................................START CONTACT-US....................................... */
+/* ............................................................................................. */
+
+.contact{
+    background-color: #f8f9fa;
+    margin-top: 3rem;
+}
+.contact ion-icon{
+    color: #1baa80;
+    font-size: 24px;
+}
+.contact p{
+    font-weight: 400;
+}
+.contactchild h2{
+    font-size: 21px;
+    font-weight: 500;
+}
+.contactchild{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.address{
+    width: 19%;
+    padding: 35; 
+}
+.address p {
+    margin: 1.5rem 0;
+}
+.address h2 {
+    margin: 1.5rem 0;
+}
+.address li{
+    list-style: none;
+}
+.notes{
+    padding: 35; 
+    text-align: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.notecontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+flex-wrap: wrap;
+}
+.note{
+    padding: 10;
+    width:50%;
+    display: flex;
+    text-align: center;
+    display: flex;
+}
+.note input{
+  width: 100%;
+  margin: 0px; 
+  border: 1px solid #ced4da;
+ border-radius: 0.25rem; 
+  padding: 0.81rem 0.96rem
+}
+.notetext{
+    padding: 10;
+}
+.notes button{
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+    padding: 0.8rem 2.6rem;
+    border-radius: 50rem;
+    background-color: #20c997;
+    color: white;
+    border: none;
+}
+.notes button:hover{
+    cursor: pointer;
+    background-color: #1baa80;
+}
+.notes h2{
+    padding: 10;
+    text-align: left;
+}
+.notes textarea{
+    width: 100%;
+    height: 149;
+    border: 1px solid #ced4da;
+    border-color: #ced4da;
+ border-radius: 0.25rem;
+}
+@media screen and (max-width:768px){
+    .notes{
+        width: 90%; 
+        margin: auto;
+        padding: 0;
+        }
+ .address{
+    margin: auto;
+    width: 60%;
+}
+.contactchild{
+    text-align: center;
+    flex-direction: column-reverse;
+    width: 100%;
+} 
+.note{
+    width: 100%;
+ }
+}
+@media screen and (min-width:769px) and (max-width:1500px) {
+ .notes{
+width: 60%; 
+padding: 0;
+}
+.note{
+    width: 100%;
+ }
+ .notecontainer{
+    justify-content: center;
+ }    
+ .notes textarea{
+    width: 100%;
+ }
+ .notes h2{
+    width: 100%;
+    margin: auto;
+ }
+ .contactchild{
+    width: 100%;
+ }
+ .address{
+    width: 40%;
+ }
+}
+/* ............................................................................................. */
+/* ........................................END CONTACT-US....................................... */
+
+
+
+/* ........................................START FOOTER......................................... */
+/* ............................................................................................. */
+.footer{
+    margin: 3rem 0;
+}
+.footerchild{
+width: 80%;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.footerchild div{
+    width: 35%;
+}
+
+.footerchild ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.copyright a{
+    color: #1baa80;
+    text-decoration: none;
+} 
+.footerchild li{
+ text-decoration: none;
+    padding: 10px;
+    list-style: none;
+    border-right: 1px solid #ced4da;
+}
+.terms a{
+    text-decoration: none;
+       color: #4c4d4d;
+   }
+  .terms a:hover{
+   cursor: pointer;
+    color: #20c997;
+   }
+
+   @media screen and (max-width:768px){
+
+.footerchild{
+    flex-direction: column;
+    justify-content: center;
+}
+.footerchild ul{
+
+    justify-content: center;
+}
+.footerchild div{
+ font-size: 14px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+   }     
+   
+   @media screen and (min-width:769px)and (max-width:1400px){
+.footerchild{
+    width: 100%;
+}
+    .footerchild div{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+       }     
+
+
+/* ........................................................................................... */
+/* ........................................END FOOTER......................................... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+/* ...........................................BONUS........................................... */
+/* ........................................................................................... */
+   .colorschild{
+    
+    background-color: white;
+   width: 100%;
+      }
+      .iconfix{
+       width: 220;
+       position: fixed;
+       display: flex;
+       right: -220;
+       top: 30%;
+   
+       transition: 1s;
+   }
+   
+   
+       .set:hover .iconfix {
+   right: 0;
+   }
+   
+   .set:hover {
+       right: 220;
+       }
+      .colors{
+       padding: 10px;
+       display: flex;
+       flex-wrap: wrap;
+      }
+      .set{
+    position: fixed;
+       width: 32px;
+       height: 32px;
+       background-color: #7b8074;
+       right: 0;
+       display: flex;
+       top: 30%;
+       transition: 1s;
+       vertical-align: middle;
+      }
+      
+   .set ion-icon{
+       margin: 4px;
+       font-size: 24px;
+       color: white;
+       }
+      .selectcolor h3{
+       padding: 10px;
+       margin-bottom: 30px;
+       border-bottom: 1px solid #dee3e4;
+      }
+      .color{
+       background-color: pink;
+       border-radius: 50%;
+       position: relative;
+       width: 10;
+       height: 10;
+       width: 18%;
+       padding: 15px;
+       margin: 10px 2px;
+       transition: .5s;
+      }  
+   .color:hover{
+         scale: 0.8;
+   }
+   
+   .colorbtn{
+          width: 70%;
+       margin: auto;
+   }
+   .colorbtn button{
+    width: 100%;
+       background-color: #20c997;
+       box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+       border: none;
+       border-color: #20c997;
+       color: #fff;
+       margin-bottom: 10px;
+   }
+/* ........................................................................................... */
+/* ...........................................BONUS........................................... */
